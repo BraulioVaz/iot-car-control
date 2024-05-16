@@ -1,7 +1,7 @@
 var mensaje = document.getElementById("mensaje");
 
 function callApi(direction){
-	axios.get('http://localhost/iot-car-control/backend/apis/setRegistro.php?estatus=' + direction)
+	axios.get('http://3.137.202.60/backend/apis/setRegistro.php?estatus=' + direction)
 	  .then(function (response) {
 	    console.log(response);
 	    mensaje.innerHTML = "Respuesta : " + response.data;
