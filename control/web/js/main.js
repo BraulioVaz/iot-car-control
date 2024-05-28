@@ -1,7 +1,7 @@
 var mensaje = document.getElementById("mensaje");
 
 function callApi(direction){
-	axios.get('http://3.131.100.124/backend/apis/setRegistro.php?estatus=' + direction)
+	axios.get('http://18.217.42.219/backend/apis/setRegistro.php?estatus=' + direction)
 	  .then(function (response) {
 	    console.log(response);
 	    mensaje.innerHTML = "Respuesta : " + response.data;
